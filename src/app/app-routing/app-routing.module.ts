@@ -12,22 +12,20 @@ import { AboutComponent } from '../page/about/about.component';
 
 
 const appRoutes: Routes = [
-    
-    //Site routes goes here 
-    { 
-        path: '', 
-        component: SiteLayoutComponent,
-        children: [
-          { path: '', component: HomeComponent, pathMatch: 'full'},
-          { path: 'home', component: HomeComponent },
-          { path: 'about', component: AboutComponent }
-        ]
-    },
-    
 
-    //no layout routes
-    { path: '**', component: PageNotFoundComponent }
-    // { path: '**', redirectTo: '' } // otherwise redirect to home
+  // Site routes goes here
+  {
+    path: '',
+    component: SiteLayoutComponent,
+    children: [
+      { path: '', component: HomeComponent, pathMatch: 'full'},
+      { path: 'home', component: HomeComponent },
+      { path: 'about', component: AboutComponent }
+    ]
+  },
+  // No layout routes
+  { path: '**', component: PageNotFoundComponent }
+  // { path: '**', redirectTo: '' } // otherwise redirect to home
 ];
 
 const routing = RouterModule.forRoot(appRoutes);
