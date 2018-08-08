@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  siteTitle: string[];
+  constructor() { 
+    this.siteTitle = 'Vallabh Kansagara'
+  }
 
   ngOnInit() {
   }

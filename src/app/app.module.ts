@@ -16,6 +16,7 @@ import { FooterComponent } from './_layout/footer/footer.component';
 import { LeftSidebarComponent } from './_layout/left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './_layout/right-sidebar/right-sidebar.component';
 import { SiteLayoutComponent } from './_layout/site-layout/site-layout.component';
+import { NamePipe } from './pipes/name.pipe';
 
 
 
@@ -29,7 +30,8 @@ import { SiteLayoutComponent } from './_layout/site-layout/site-layout.component
     LeftSidebarComponent,
     RightSidebarComponent,
     SiteLayoutComponent,
-    AboutComponent
+    AboutComponent,
+    NamePipe
   ],
   imports: [
     BrowserModule,
