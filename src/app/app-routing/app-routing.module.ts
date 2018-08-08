@@ -8,6 +8,7 @@ import { HomeComponent } from '../home/home.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component'
 import { SiteLayoutComponent } from '../_layout/site-layout/site-layout.component'
 import { AboutComponent } from '../page/about/about.component';
+import { HelloWorldComponent } from '../hello-world/hello-world/hello-world.component';
 
 
 
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
       { path: 'about', component: AboutComponent }
     ]
   },
+  { path: 'hello-world', component: HelloWorldComponent }
   // No layout routes
   { path: '**', component: PageNotFoundComponent }
   // { path: '**', redirectTo: '' } // otherwise redirect to home
