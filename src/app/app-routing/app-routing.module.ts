@@ -24,7 +24,7 @@ const appRoutes: Routes = [
       { path: 'about', component: AboutComponent }
     ]
   },
-  { path: 'hello-world', component: HelloWorldComponent }
+  { path: 'hello-world', component: HelloWorldComponent },
   // No layout routes
   { path: '**', component: PageNotFoundComponent }
   // { path: '**', redirectTo: '' } // otherwise redirect to home
