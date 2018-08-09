@@ -1,5 +1,5 @@
 // Module(s)
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule,Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HelloWorldModule } from './hello-world/hello-world.module';
@@ -40,7 +40,9 @@ import { NamePipe } from './pipes/name.pipe';
   //exports—The subset of declarations that should be visible and usable in the component templates of other NgModules.
   exports: [] ,
   //providers—Creators of services that this NgModule contributes to the global collection of services; they become accessible in all parts of the app. (You can also specify providers at the component level, which is often preferred.)
-  providers: [],
+  providers: [
+    Title
+  ],
   // bootstrap—The main application view, called the root component, which hosts all other app views. Only the root NgModule should set this bootstrap property.
   bootstrap: [AppComponent]
 })
