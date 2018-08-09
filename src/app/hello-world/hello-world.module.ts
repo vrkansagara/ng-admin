@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule, OnInit } from '@angular/core';
 
 import { BarComponent } from './bar/bar.component';
@@ -7,10 +8,18 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 
 import { MyOwnCustomMaterialModule }  from 'src/app/my-own-custom-material/my-own-custom-material.module';
+import {HttpClientModule} from '@angular/common/http';
+
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
-    MyOwnCustomMaterialModule
+    CommonModule,
+    MyOwnCustomMaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   declarations: [FooComponent, BarComponent, BazComponent, HelloWorldComponent],
   exports : [
