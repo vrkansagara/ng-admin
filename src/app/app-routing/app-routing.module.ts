@@ -13,7 +13,7 @@ import { HelloWorldComponent } from '../hello-world/hello-world/hello-world.comp
 
 
 const appRoutes: Routes = [
-
+  
   // Site routes goes here
   {
     path: '',
@@ -24,9 +24,23 @@ const appRoutes: Routes = [
       { path: 'about', component: AboutComponent }
     ]
   },
-  { path: 'hello-world', component: HelloWorldComponent },
+  { 
+    path: 'hello-world',
+    component: SiteLayoutComponent ,
+    children: [
+      { path: '', component: HelloWorldComponent, pathMatch: 'full'},
+    ]
+  },
   // No layout routes
-  { path: '**', component: PageNotFoundComponent }
+  { 
+    path: '**',
+    component: SiteLayoutComponent,
+    children: [
+      {
+        path: '', component: PageNotFoundComponent, pathMatch: 'full'
+      }
+    ]
+  }
   // { path: '**', redirectTo: '' } // otherwise redirect to home
 ];
 
