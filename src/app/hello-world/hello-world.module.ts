@@ -5,8 +5,12 @@ import { BazComponent } from './baz/baz.component';
 import { FooComponent } from './foo/foo.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 
+
+import { MyOwnCustomMaterialModule }  from 'src/app/my-own-custom-material/my-own-custom-material.module';
+
 @NgModule({
   imports: [
+    MyOwnCustomMaterialModule
   ],
   declarations: [FooComponent, BarComponent, BazComponent, HelloWorldComponent],
   exports : [
