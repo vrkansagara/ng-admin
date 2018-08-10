@@ -17,6 +17,7 @@ import { LeftSidebarComponent } from './_layout/left-sidebar/left-sidebar.compon
 import { RightSidebarComponent } from './_layout/right-sidebar/right-sidebar.component';
 import { SiteLayoutComponent } from './_layout/site-layout/site-layout.component';
 import { NamePipe } from './pipes/name.pipe';
+import { ServiceComponent } from './service/service.component';
 @NgModule({
   //declarations—The components, directives, and pipes that belong to this NgModule.
   declarations: [
@@ -29,7 +30,9 @@ import { NamePipe } from './pipes/name.pipe';
     RightSidebarComponent,
     SiteLayoutComponent,
     AboutComponent,
-    NamePipe
+    NamePi,
+    ServiceComponent,
+    ServiceComponentpe
   ],
   //imports—Other modules whose exported classes are needed by component templates declared in this NgModule.
   imports: [
