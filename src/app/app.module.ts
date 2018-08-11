@@ -18,6 +18,7 @@ import { RightSidebarComponent } from './layout/partial/right-sidebar/right-side
 import { SiteLayoutComponent } from './layout/site-layout/site-layout.component';
 import { NamePipe } from './pipes/name/name.pipe';
 import { LoggerService } from './service/logger/logger.service';
+import { SpyDirective } from './src/app/spy.directive';
 /**
  * Third party library.
  */
@@ -36,7 +37,8 @@ import { LoggerService } from './service/logger/logger.service';
     RightSidebarComponent,
     SiteLayoutComponent,
     AboutComponent,
-    NamePipe
+    NamePipe,
+    SpyDirective
   ],
   // Imports—Other modules whose exported classes are needed by component templates declared in this NgModule.
   imports: [
