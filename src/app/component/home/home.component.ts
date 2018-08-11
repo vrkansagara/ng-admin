@@ -11,8 +11,9 @@ export class HomeComponent implements OnInit {
   
   siteTitle: string;
   constructor(
-    private logger: LoggerService,
+    private _logger: LoggerService,
   ) {
+    this._logger.warn('This is warn.');
     
   }
   

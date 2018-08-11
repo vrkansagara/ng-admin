@@ -18,6 +18,11 @@ import { RightSidebarComponent } from './layout/partial/right-sidebar/right-side
 import { SiteLayoutComponent } from './layout/site-layout/site-layout.component';
 import { NamePipe } from './pipes/name/name.pipe';
 import { LoggerService } from './service/logger/logger.service';
+/**
+ * Third party library.
+ */
+
+
 
 @NgModule({
   // Declarations—The components, directives, and pipes that belong to this NgModule.

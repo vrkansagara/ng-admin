@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { LoggerService } from '../../service/logger/logger.service';
+import { LoggerService } from './../../service/logger/logger.service';
 
 @Component({
   selector: 'app-root',
@@ -12,15 +12,14 @@ export class AppComponent {
   
   constructor(
     private titleService: Title ,
-    private logger: LoggerService,
+    private _logger: LoggerService,
   ) {
     this.title = 'NG-ADMIN';
-    
-    this.logger.log('Setting up siteTitle');
     this.setTitle(this.title);
-    
+    this._logger.log('Starting app.components.ts');
+
   }
-  
+
   public setTitle( newTitle: string) {
     this.titleService.setTitle( newTitle );
   }
