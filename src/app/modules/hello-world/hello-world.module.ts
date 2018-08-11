@@ -7,7 +7,7 @@ import { FooComponent } from './foo/foo.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 
-import { MyOwnCustomMaterialModule }  from 'src/app/my-own-custom-material/my-own-custom-material.module';
+import { GoogleMaterialModule }  from '../google-material/google-material.module';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -16,7 +16,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   imports: [
     CommonModule,
-    MyOwnCustomMaterialModule,
+    GoogleMaterialModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
@@ -28,4 +28,4 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 })
 export class HelloWorldModule implements OnInit{
   ngOnInit()    { console.log('onInit'); }
- }
+}

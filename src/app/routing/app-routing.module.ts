@@ -2,18 +2,13 @@ import { NgModule } from '@angular/core';
 
 // Applicatin Specific
 import { Routes, RouterModule } from '@angular/router';
-
-
-import { HomeComponent } from '../home/home.component';
-import { PageNotFoundComponent } from '../page-not-found/page-not-found.component'
-import { SiteLayoutComponent } from '../_layout/site-layout/site-layout.component'
-import { AboutComponent } from '../page/about/about.component';
-import { HelloWorldComponent } from '../hello-world/hello-world/hello-world.component';
-
-
+import { HomeComponent } from '../component/home/home.component';
+import { PageNotFoundComponent } from './../component/page-not-found/page-not-found.component';
+import { SiteLayoutComponent } from '../layout/site-layout/site-layout.component';
+import { AboutComponent } from './../modules/page/about/about.component';
+import { HelloWorldComponent } from '../modules/hello-world/hello-world/hello-world.component';
 
 const appRoutes: Routes = [
-  
   // Site routes goes here
   {
     path: '',

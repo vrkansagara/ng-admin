@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./site-layout.component.css']
 })
 export class SiteLayoutComponent implements OnInit {
-
   constructor() { }
-
+  
   ngOnInit() {
   }
-
+  
 }
